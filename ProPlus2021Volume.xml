@@ -1,0 +1,47 @@
+<!-- Office configuration file sample. Powered by ODTManager -->
+<Configuration>
+  <Add OfficeClientEdition="64">
+    <Product ID="ProPlus2021Volume" PIDKEY="FXYTK-NJJ8C-GB6DW-3DYQT-6F7TH">
+	
+      <Language ID="en-us" />
+      <Language ID="ru-ru" />	  
+      <Language ID="uk-ua" />
+
+      <ExcludeApp ID="Access" />
+      <!-- <ExcludeApp ID="Excel" /> -->
+      <ExcludeApp ID="Groove" />
+      <ExcludeApp ID="Lync" />
+      <ExcludeApp ID="OneDrive" />
+      <ExcludeApp ID="OneNote" />
+      <ExcludeApp ID="Outlook" />
+      <!-- <ExcludeApp ID="PowerPoint" /> -->
+      <ExcludeApp ID="Publisher" />
+      <ExcludeApp ID="Teams" />	  
+      <!-- <ExcludeApp ID="Word"/> -->
+
+    </Product>
+  </Add>
+
+  <Remove All="True" />
+  <RemoveMSI All="True" />
+  <Updates Enabled="TRUE" />
+  <Property Name="Autoactivate" Value="1" />
+  <Property Name="ForceAppShutdown" Value="TRUE" />
+  <AppSettings>
+    <User Key="software\microsoft\office\16.0\common" Name="sendcustomerdata" Value="0" Type="REG_DWORD" App="office16" Id="L_Sendcustomerdata" />
+    <User Key="software\microsoft\office\16.0\common\general" Name="shownfirstrunoptin" Value="1" Type="REG_DWORD" App="office16" Id="L_DisableOptinWizard" />
+    <User Key="software\microsoft\office\16.0\common" Name="qmenable" Value="0" Type="REG_DWORD" App="office16" Id="L_EnableCustomerExperienceImprovementProgram" />
+    <User Key="software\microsoft\office\16.0\osm" Name="enableupload" Value="0" Type="REG_DWORD" App="office16" Id="L_OfficeInventoryAgentUpload" />
+    <User Key="software\microsoft\office\16.0\osm" Name="enablefileobfuscation" Value="1" Type="REG_DWORD" App="office16" Id="L_OfficeInventoryAgentFilemetadataObfuscation" />
+    <User Key="software\microsoft\office\16.0\osm" Name="enablelogging" Value="0" Type="REG_DWORD" App="office16" Id="L_EnableLogging" />
+    <User Key="software\microsoft\office\16.0\common\feedback" Name="surveyenabled" Value="0" Type="REG_DWORD" App="office16" Id="L_SendSurvey" />
+    <User Key="software\microsoft\office\16.0\common\feedback" Name="enabled" Value="0" Type="REG_DWORD" App="office16" Id="L_SendFeedback" />
+    <User Key="software\microsoft\office\16.0\firstrun" Name="disablemovie" Value="1" Type="REG_DWORD" App="office16" Id="L_DisableMovie" />
+    <User Key="software\microsoft\office\16.0\firstrun" Name="bootedrtm" Value="1" Type="REG_DWORD" App="office16" Id="L_DisableOfficeFirstrun" />
+    <User Key="software\microsoft\office\16.0\excel\options" Name="defaultformat" Value="51" Type="REG_DWORD" App="excel16" Id="L_SaveExcelfilesas" />
+    <User Key="software\microsoft\office\16.0\powerpoint\options" Name="defaultformat" Value="27" Type="REG_DWORD" App="ppt16" Id="L_SavePowerPointfilesas" />
+    <User Key="software\microsoft\office\16.0\word\options" Name="defaultformat" Value="" Type="REG_SZ" App="word16" Id="L_SaveWordfilesas" />
+  </AppSettings>
+  <Display Level="Full" AcceptEULA="TRUE" />
+</Configuration>
+
